@@ -1,0 +1,22 @@
+{
+  "landingHeader": {
+    "button": "Check",
+    "subtitle": "Check all Dev tools you don't know even exist",
+    "titlecolor": "latest version",
+    "titleend": "of your favorite tool",
+    "titlestart": "Website where you can find"
+  },
+  "landingContent": {
+    "contentChoose": {
+      "title": "Choose your lovely path",
+      "subtitle": "We are here for you so that you can be up to date with the latest tools. All we need is that you choose the way you feel best",
+      "lastUpdated": "Last updated",
+      "mostStars": "Most liked",
+      "mostDownloads": "Most downloads"
+    }
+  },
+  "menu#1": "Home",
+  "menu#2": "About",
+  "menu#3": "Contact",
+  "menu#4": "Donate"
+}
