@@ -1,12 +1,6 @@
 version: "3"
 
-## TODO work out production architecture (add nginx proxy)
-## TODO work out testing?
-
 services:
-  ##########################
-  ### SETUP SERVER CONTAINER
-  ##########################
   server:
     build: 
       context: ./server
@@ -17,19 +11,16 @@ services:
     ports:
       - 4000:4000
     volumes:
-      # Map client src to server src to hot reload
       - ./server/src:/app/server/src
     command: node src/server.js
     restart: always
-  ##########################
-  ### SETUP CLIENT CONTAINER
-  ##########################
   client:
     build: 
       context: ./client
       dockerfile: Dockerfile.prod
     ports:
-      - 81:80
+      - 80:80
+      - 443:443
     links:
       - server
     restart: always
