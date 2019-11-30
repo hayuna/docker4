@@ -4,6 +4,7 @@ services:
   server:
     build: 
       context: ./server
+    container_name: TST_api
     environment:
       - PORT=4000
       - VIRTUAL_HOST=2000
@@ -12,9 +13,10 @@ services:
     volumes:
       - ./server/src:/app/server/src
     command: node src/server.js
-    restart: always
+   	restart: always
   client:
-    build: 
+    container_name: TST_client
+    build:
       context: ./client
     ports:
       - 80:80
