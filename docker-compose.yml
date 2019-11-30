@@ -4,7 +4,6 @@ services:
   server:
     build: 
       context: ./server
-      dockerfile: Dockerfile.prod
     environment:
       - PORT=4000
       - VIRTUAL_HOST=2000
@@ -17,7 +16,6 @@ services:
   client:
     build: 
       context: ./client
-      dockerfile: Dockerfile.prod
     ports:
       - 80:80
       - 443:443
