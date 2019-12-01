@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-TEST
+TEST ENV
     <Navigation></Navigation>
     <router-view></router-view>
   </div>
