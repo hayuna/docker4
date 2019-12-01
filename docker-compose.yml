@@ -13,7 +13,7 @@ services:
     volumes:
       - ./server/src:/app/server/src
     command: node src/server.js
-   	restart: always
+    restart: always
   client:
     container_name: TST_client
     build:
