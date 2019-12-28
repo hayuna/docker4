@@ -4,7 +4,7 @@ on:
   repository_dispatch:
     types: do-something
   schedule:
-    - cron:  '* * * * * *'
+    - cron:  '*/1 * * * *'
 
 jobs:
   build:
